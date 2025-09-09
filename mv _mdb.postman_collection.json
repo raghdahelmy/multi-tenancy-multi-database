@@ -1,0 +1,745 @@
+{
+	"info": {
+		"_postman_id": "28416b9a-9d1c-4d1e-ad3f-c76dbd7cfd4c",
+		"name": "mv _mdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19677127",
+		"_collection_link": "https://www.postman.com/interstellar-crescent-998931/workspace/p/collection/19677127-28416b9a-9d1c-4d1e-ad3f-c76dbd7cfd4c?action=share&source=collection_link&creator=19677127"
+	},
+	"item": [
+		{
+			"name": "RegistrationForm",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"eslam\",\r\n    \"tenant\": \"electronicsShop\",\r\n    \"phone\": \"0234567991\",\r\n    \"email\": \"eslam@example.com\",\r\n    \"password\": \"password123\",\r\n        \"password_confirmation\": \"password123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://multivendor.run/api/registrationform",
+							"protocol": "http",
+							"host": [
+								"multivendor",
+								"run"
+							],
+							"path": [
+								"api",
+								"registrationform"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"eslam\",\r\n    \"tenant\": \"electronicsShop\",\r\n    \"phone\": \"0234567991\",\r\n    \"email\": \"eslam@example.com\",\r\n    \"password\": \"password123\",\r\n        \"password_confirmation\": \"password123\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://multivendor.run/api/registrationform",
+									"protocol": "http",
+									"host": [
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"api",
+										"registrationform"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Sep 2025 09:50:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "01K4PY46GJWN9YKZASFG1QGFCY"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"تم تسجيل المستخدم بنجاح\",\n    \"access_token\": \"5|CY9hGfTALe34eqwOj2n2L6cJviHYmWo2OikTbN8g318960a5\",\n    \"user\": {\n        \"name\": \"eslam\",\n        \"email\": \"eslam@example.com\",\n        \"updated_at\": \"2025-09-09T09:50:06.000000Z\",\n        \"created_at\": \"2025-09-09T09:50:06.000000Z\",\n        \"id\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fashion tanent",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"fashion user7\",\r\n    \"email\": \"fashionuser7@example.com\",\r\n    \"password\": \"password123\",\r\n        \"password_confirmation\": \"password123\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://fashionshop.multivendor.run/register",
+									"protocol": "http",
+									"host": [
+										"fashionshop",
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"fashion user 1\",\r\n    \"email\": \"fashionuser2@example.com\",\r\n    \"password\": \"password123\",\r\n        \"password_confirmation\": \"password123\"\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://fashionshop.multivendor.run/register",
+											"protocol": "http",
+											"host": [
+												"fashionshop",
+												"multivendor",
+												"run"
+											],
+											"path": [
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 09 Sep 2025 07:46:38 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.3.16"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "phpdebugbar-id",
+											"value": "01K4PQ1VA6C4S9BJJWVMT4BCHP"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"user created successfully\",\n    \"access_token\": \"1|GujHR6kcti91G2qEAFxcPFShaXXek1J2eJv0kD5re3007abe\",\n    \"user\": {\n        \"name\": \"fashion user 1\",\n        \"email\": \"fashionuser2@example.com\",\n        \"updated_at\": \"2025-09-09T07:46:39.000000Z\",\n        \"created_at\": \"2025-09-09T07:46:39.000000Z\",\n        \"id\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"fashionuser2@example.com\",\r\n    \"password\": \"password123\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://fashionshop.multivendor.run/login",
+									"protocol": "http",
+									"host": [
+										"fashionshop",
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"fashionuser2@example.com\",\r\n    \"password\": \"password123\"\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://fashionshop.multivendor.run/login",
+											"protocol": "http",
+											"host": [
+												"fashionshop",
+												"multivendor",
+												"run"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 09 Sep 2025 07:49:28 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.3.16"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "phpdebugbar-id",
+											"value": "01K4PQ712EG3R6KPAF54ZYS5VW"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"تم تسجيل الدخول بنجاح\",\n    \"access_token\": \"3|Smi8RrzUz5UOl0caupIn63YxV4YuSKJGAf1WQEI4296b98cd\",\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"fashion user 1\",\n        \"email\": \"fashionuser2@example.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2025-09-09T07:46:39.000000Z\",\n        \"updated_at\": \"2025-09-09T07:46:39.000000Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "bearer 4|cvxSl9Ggf2Bj6vLd6MZXhrUVanSZkSKy2cag4gBx3940d241",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://fashionshop.multivendor.run/logout",
+									"protocol": "http",
+									"host": [
+										"fashionshop",
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "creat category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "bearer 3|Smi8RrzUz5UOl0caupIn63YxV4YuSKJGAf1WQEI4296b98cd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n\r\n{\r\n  \"name\": \"T-shirts\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://fashionshop.multivendor.run/create-category",
+									"protocol": "http",
+									"host": [
+										"fashionshop",
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"create-category"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "creat category",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "bearer 3|Smi8RrzUz5UOl0caupIn63YxV4YuSKJGAf1WQEI4296b98cd",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n\r\n{\r\n  \"name\": \"T-shirts\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://fashionshop.multivendor.run/create-category",
+											"protocol": "http",
+											"host": [
+												"fashionshop",
+												"multivendor",
+												"run"
+											],
+											"path": [
+												"create-category"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 09 Sep 2025 07:50:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.3.16"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "phpdebugbar-id",
+											"value": "01K4PQ8C8VB2VHB7SCWQAQ50D0"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"تم انشاء القسم بنجاح\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"T-shirts\",\n        \"created_at\": \"2025-09-09 07:50\",\n        \"updated_at\": \"2025-09-09 07:50\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "products",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "bearer 3|Smi8RrzUz5UOl0caupIn63YxV4YuSKJGAf1WQEI4296b98cd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"yellow T-shirts\",\r\n    \"price\": 350,\r\n    \"category_id\": 1\r\n}\r\n    ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://fashionshop.multivendor.run/products",
+									"protocol": "http",
+									"host": [
+										"fashionshop",
+										"multivendor",
+										"run"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "bearer 3|Smi8RrzUz5UOl0caupIn63YxV4YuSKJGAf1WQEI4296b98cd",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"yellow T-shirts\",\r\n    \"price\": 350,\r\n    \"category_id\": 1\r\n}\r\n    ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://fashionshop.multivendor.run/products",
+											"protocol": "http",
+											"host": [
+												"fashionshop",
+												"multivendor",
+												"run"
+											],
+											"path": [
+												"products"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 09 Sep 2025 07:51:18 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.16"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.3.16"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "phpdebugbar-id",
+											"value": "01K4PQABQNEV9EGKHT5Z9QH3TJ"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5, max=100"
+										},
+										{
+											"key": "Connection",
+											"value": "Keep-Alive"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"تم انشاء المنتج بنجاح\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"yellow T-shirts\",\n        \"price\": 350,\n        \"category\": \"T-shirts\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"item": [
+						{
+							"name": "creat orders",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "bearer 4|EnVxOyGw4FoVEXZ4NOoi0r6TwxP3MZMUjOVl70iG94c4ebf1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"items\": [\r\n    { \"product_id\": 1, \"quantity\": 2 }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Fashion}}multivendor.run/orders",
+									"host": [
+										"{{Fashion}}multivendor",
+										"run"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Fashion",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "clothes",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "electronics",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
